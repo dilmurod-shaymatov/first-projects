@@ -1,0 +1,205 @@
+/* ===== Umumiy sozlamalar ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #FBF8F2;
+    color: #1F2421;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  a {
+    color: #B5502D;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  
+  /* ===== Header ===== */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border-bottom: 1px solid #E0DACB;
+  }
+  
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .site-header nav a {
+    margin-left: 24px;
+    color: #1F2421;
+    font-size: 0.95rem;
+  }
+  
+  .site-header nav a:hover {
+    color: #B5502D;
+  }
+  
+  /* ===== Hero bo'limi ===== */
+  .hero {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+  }
+  
+  .eyebrow {
+    color: #6B8F71;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  
+  .hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    color: #4A4A45;
+    font-size: 1.1rem;
+    max-width: 50ch;
+  }
+  
+  /* ===== Men haqimda ===== */
+  .about h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    margin-bottom: 24px;
+    max-width: 60ch;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+  }
+  
+  .skills li {
+    border: 1px solid #6B8F71;
+    color: #6B8F71;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+  
+  /* ===== Loyihalar ===== */
+  .projects h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .project {
+    padding-top: 24px;
+    border-top: 1px solid #E0DACB;
+  }
+  
+  .project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .project p {
+    color: #4A4A45;
+  }
+  
+  /* ===== Aloqa ===== */
+  .contact h2 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 450px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #E0DACB;
+    background-color: white;
+    padding: 12px 14px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: 2px solid #6B8F71;
+    outline-offset: 1px;
+  }
+  
+  .contact button {
+    background-color: #B5502D;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .contact button:hover {
+    background-color: #963f21;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    color: #8A8A80;
+    font-size: 0.85rem;
+    padding: 40px 24px;
+  }
+  
+  /* ===== Telefon uchun moslashuv ===== */
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .skills {
+      flex-wrap: wrap;
+    }
+  }
