@@ -1,24 +1,16 @@
-console.log("Salom JavaScript!")
-const tugma = document.getElementById("salomTugma");
+const form = document.getElementById("contactForm");
+const formMsg = document.getElementById("formMsg");
 
-tugma.addEventListener("click", function(){
-    tugma.textContent = "Rahmat, siz tugmani bosdingiz!";
-    tugma.style.backgroundColor = "lightgreen";
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  if (name === "" || message === "") {
+    formMsg.textContent = "Iltimos, ism va xabarni to'ldiring.";
+  } else {
+    formMsg.textContent = "Rahmat, " + name + "! Xabaringiz qabul qilindi.";
+    form.reset();
+  }
 });
-
-const salomlashTugma = document.getElementById("salomlashTugma");
-const natija = document.getElementById("natija");
-
-salomlashTugma.addEventListener("click", function(){
-    const ism = document.getElementById("ismInput").value;
-    if (ism === "") {
-        natija.textContent = "Iltimos, ismingizni kiriting!";
-    }else{
-        natija.textContent= "Salom, " + ism + "! Xush kelibsiz!"
-    }
-    
-});
-
-const konikmalar = ["HTML", "CSS", "JavaScript"];
-console.log(konikmalar[0]); //"HTML" chiqadi
-console.log(konikmalar.length);

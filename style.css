@@ -203,3 +203,8 @@
       flex-wrap: wrap;
     }
   }
+
+  #formMsg {
+  color: #6B8F71;
+  font-size: 0.9rem;
+}
